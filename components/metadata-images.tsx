@@ -4,14 +4,14 @@ import { SITE_INFO } from "@/config/site";
 
 /* eslint-disable @next/next/no-img-element */
 
-type CALogoProps = {
+type VHLogoProps = {
   width: number;
   height: number;
   color?: string;
   style?: CSSProperties;
 };
 
-function CALogo({ width, height, color = "#f5f5f3", style }: CALogoProps) {
+function VHLogo({ width, height, color = "#f5f5f3", style }: VHLogoProps) {
   return (
     <svg
       viewBox="0 0 240 200"
@@ -20,31 +20,20 @@ function CALogo({ width, height, color = "#f5f5f3", style }: CALogoProps) {
       style={{ display: "block", ...style }}
     >
       <path
-        d="M 104 48 C 84 24 34 28 25 93 C 17 157 65 177 101 149"
+        d="M 25 40 L 70 160 L 115 40"
         fill="none"
         stroke={color}
         strokeWidth="16"
-        strokeLinecap="butt"
-        strokeLinejoin="miter"
-        strokeMiterlimit={20}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
-        d="M 130 180 L 177 20 L 224 180"
+        d="M 145 40 L 145 160 M 215 40 L 215 160 M 145 100 L 215 100"
         fill="none"
         stroke={color}
         strokeWidth="16"
-        strokeLinecap="butt"
-        strokeLinejoin="miter"
-        strokeMiterlimit={20}
-      />
-      <line
-        x1="152"
-        y1="128"
-        x2="202"
-        y2="128"
-        stroke={color}
-        strokeWidth="16"
-        strokeLinecap="butt"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
@@ -75,7 +64,7 @@ function AppIconImage({
         borderRadius,
       }}
     >
-      <CALogo width={logoWidth} height={logoHeight} />
+      <VHLogo width={logoWidth} height={logoHeight} />
     </div>
   );
 }
@@ -123,7 +112,7 @@ function PortfolioSocialImage({ profileImageSrc }: PortfolioSocialImageProps) {
           }}
         >
           <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
-            <CALogo width={72} height={60} />
+            <VHLogo width={72} height={60} />
             <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
               <div
                 style={{
@@ -207,4 +196,4 @@ function PortfolioSocialImage({ profileImageSrc }: PortfolioSocialImageProps) {
   );
 }
 
-export { AppIconImage, CALogo, PortfolioSocialImage };
+export { AppIconImage, VHLogo, PortfolioSocialImage };
