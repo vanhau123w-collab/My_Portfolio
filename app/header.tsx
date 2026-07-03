@@ -1,4 +1,4 @@
-import { AppleHelloEffectCongAnh } from "@/components/apple-hello-effect-cong-anh";
+import { AppleHelloEffect } from "@/components/apple-hello-effect";
 import { GitHubIcon } from "@/components/icons/social-icons";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { Button } from "@/components/ui/button";
@@ -20,7 +20,7 @@ function Header() {
               className="flex h-8 w-32 items-center overflow-hidden"
               aria-label="Home"
             >
-              <AppleHelloEffectCongAnh
+              <AppleHelloEffect
                 className="h-7 w-28 translate-y-0.5 text-foreground"
                 durationScale={0.45}
               />

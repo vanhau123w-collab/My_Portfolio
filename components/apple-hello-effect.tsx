@@ -14,19 +14,19 @@ const animateProps = {
   opacity: 1,
 } as const;
 
-export type AppleHelloEffectCongAnhProps = React.ComponentProps<
+export type AppleHelloEffectProps = React.ComponentProps<
   typeof motion.svg
 > & {
   durationScale?: number;
   onAnimationComplete?: () => void;
 };
 
-export function AppleHelloEffectCongAnh({
+export function AppleHelloEffect({
   className,
   durationScale = 1,
   onAnimationComplete,
   ...props
-}: AppleHelloEffectCongAnhProps) {
+}: AppleHelloEffectProps) {
   const calc = (x: number) => x * durationScale;
   const [animationKey, setAnimationKey] = useState(0);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
