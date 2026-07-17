@@ -12,7 +12,7 @@ export const PROJECTS: Project[] = [
     description: "A premium developer portfolio built with Next.js 16, TypeScript, Tailwind CSS, and Motion.",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Motion"],
     githubUrl: "https://github.com/vanhau123w-collab/My_Portfolio",
-    liveUrl: "https://my-portfolio-ruddy-one-47.vercel.app/",
+    liveUrl: "https://my-portfolio-hcmuter.vercel.app/",
   },
   {
     title: "HireHub - Recruitment & ATS Platform",

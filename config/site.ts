@@ -1,5 +1,5 @@
 const siteUrl = (
-  process.env.NEXT_PUBLIC_SITE_URL || "https://pvhau-portfolio.vercel.app"
+  process.env.NEXT_PUBLIC_SITE_URL || "https://my-portfolio-hcmuter.vercel.app"
 ).replace(/\/$/, "");
 
 export const SITE_INFO = {
