@@ -15,10 +15,10 @@ export const PROJECTS: Project[] = [
     liveUrl: "https://my-portfolio-ruddy-one-47.vercel.app/",
   },
   {
-    title: "E-Commerce Platform",
-    description: "A modern, responsive e-commerce web application featuring real-time checkout and product filtering.",
-    tags: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
-    githubUrl: "https://github.com/vanhau123w-collab",
-    liveUrl: "https://github.com/vanhau123w-collab",
+    title: "HireHub - Recruitment & ATS Platform",
+    description: "A production-ready, multi-tenant recruitment platform featuring dedicated Candidate, Recruiter, and Platform Admin portals. It includes a PostgreSQL/Prisma data model with tenant-scoped isolation, a drag-and-drop Kanban ATS board, and asynchronous resume processing using Redis/BullMQ.",
+    tags: ["React", "NestJS", "TypeScript", "PostgreSQL", "Prisma", "Redis", "BullMQ", "Docker"],
+    githubUrl: "https://github.com/vanhau123w-collab/HireHub",
+    liveUrl: "https://hirehubweb-production.up.railway.app",
   },
 ];
